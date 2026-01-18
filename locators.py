@@ -12,7 +12,7 @@ class MainPageLocators:
     LOGIN_BUTTON_MAIN = (By.XPATH, ".//button[text()='Войти в аккаунт']")
     
     # 2. Кнопка «Личный Кабинет» в хедере
-    PERSONAL_ACCOUNT_BUTTON = (By.XPATH, ".//p[text()='Личный Кабинет']")
+    PERSONAL_ACCOUNT_BUTTON = (By.XPATH, "//p[text()='Личный Кабинет']")
     
     # 3. Кнопка «Конструктор» в хедере
     CONSTRUCTOR_BUTTON = (By.XPATH, ".//p[text()='Конструктор']")
@@ -31,6 +31,9 @@ class MainPageLocators:
     
     # 8. Активный раздел в конструкторе (для проверки)
     ACTIVE_SECTION = (By.CLASS_NAME, "tab_tab_type_current__2BEPc")
+
+    # 9. Заголовок страницы "Соберите бургер"
+    PAGE_TITLE = (By.XPATH, "//h1[text()='Соберите бургер']")
 
 # ==================== СТРАНИЦА РЕГИСТРАЦИИ ====================
 class RegisterPageLocators:
@@ -76,6 +79,9 @@ class ForgotPasswordPageLocators:
     
     # 3. Ссылка «Войти» на странице восстановления пароля
     LOGIN_LINK = (By.XPATH, ".//a[text()='Войти']")
+
+    # 4. Заголовок страницы восстановления пароля (для ожидания загрузки)
+    PAGE_TITLE = (By.XPATH, "//h2[contains(text(), 'Восстановление пароля')]")
 
 # ==================== ЛИЧНЫЙ КАБИНЕТ ====================
 class PersonalAccountLocators:

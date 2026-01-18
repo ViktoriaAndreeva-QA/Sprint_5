@@ -24,6 +24,9 @@ def generate_password(length=10):
 
 
 # ФИКСИРОВАННЫЕ ДАННЫЕ ДЛЯ ТЕСТОВ
-TEST_NAME = "Виктория Андреева"          # Имя для регистрации
-VALID_PASSWORD = "Password123"     # Валидный пароль (10 символов)
-SHORT_PASSWORD = "12345"           # Невалидный пароль (5 символов)
+class TestData:
+    TEST_NAME = "Виктория Андреева"         # Имя для регистрации
+    VALID_PASSWORD = "Password123"          # Валидный пароль (10 символов)
+    SHORT_PASSWORD = "12345"                # Невалидный пароль (5 символов)
+    MIN_PASSWORD_LENGTH = 6                 # Минимальная длина пароля
+
